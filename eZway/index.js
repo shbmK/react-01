@@ -1,43 +1,20 @@
-/* const el1=(<div>
-    <img src="./react-logo.png" width="40px"></img>
-    <h1>Fun facts about React</h1>
-    <ul>
-    <li>Was first released in 2013</li>
-    <li>Was originally created by Jordan Walke</li>
-    <li>Has well over 100K starts in Github</li>
-    <li>Is Maintained by facebook</li>
-    <li>Powers many apps mobile and web apps</li>
-    </ul>
-    </div>
-    )
-/* function Page1(){
-    return (
-    <>
-    <img src="./react-logo.png" width="40px"></img>
-    <h1>Fun facts about React</h1>
-    <ul>
-    <li>Was first released in 2013</li>
-    <li>Was originally created by Jordan Walke</li>
-    <li>Has well over 100K starts in Github</li>
-    <li>Is Maintained by facebook</li>
-    <li>Powers many apps mobile and web apps</li>
-    </ul>
-    </>
-     )
-    } 
-ReactDOM.createRoot(document.getElementById("root")).render(el1) */
 function Header() {
     return (
         <header>
-            <nav>
-                <img src="./react-logo.png" width="40px" />
+            <nav className="navbar">
+                <img src="./react-logo.png" className="imgur" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
     )
 }
 function Footer() {
     return (
-        <footer>
+        <footer className="foot">
             <small>© 2023 Astarte development. All rights reserved.</small>
         </footer>
     )
