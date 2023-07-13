@@ -1,6 +1,10 @@
 *{
   box-sizing:border-box;
+}
+body{
+  background-color: #282D35;
   margin:0;
+  height:100vh;
 }
 nav {
   display: flex;
@@ -9,19 +13,45 @@ nav {
   height: 90px;
   padding: 30px 25px;
 }
-nav>img{
+.nav-logo{
   margin-right: 10px;
   width:40px
   
 }
-nav>h3{
+.nav-title{
   margin-left:auto;
   color:#DEEBF8;
   font-weight: 600;
   
 }
-nav>h2{
+.nav-logo_text{
   color: #61DAFB; 
   font-weight: 700;
   font-size: 22px;
+}
+main{
+  padding:60px 30px;
+  background-image: url(./assets/react-icon-large.png);
+  background-repeat: no-repeat;
+  background-position: right 65%;
+  color:white;
+}
+.main-title{
+  margin:0;
+  font-size:40px;
+  font-weight:bold;
+  letter-spacing: -0.05em;
+
+}
+.main-facts{
+  margin-top: 46px;
+  max-width: 400x;
+}
+.main-facts>li{
+  line-height: 20px;
+  padding-block:10px;
+}
+.main-facts>li::marker{
+  font-size: 1.3rem;
+  color:#61DAFB;
 }
