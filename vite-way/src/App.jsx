@@ -1,51 +1,35 @@
-import React from 'react'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
 
-function Header() {
+function App() {
+  const [count, setCount] = useState(0)
+
   return (
-      <header>
-          <nav className="navbar">
-              <img src="./react-logo.png" className="imgur" />
-              <ul className="nav-items">
-                  <li>Pricing</li>
-                  <li>About</li>
-                  <li>Contact</li>
-              </ul>
-          </nav>
-      </header>
-  )
-}
-function Footer() {
-  return (
-      <footer className="foot">
-          <small>© 2023 Astarte development. All rights reserved.</small>
-      </footer>
-  )
-}
-function MainContent() {
-  return (
+    <>
       <div>
-          <h1>Reasons I'm excited to learn React</h1>
-          <ol>
-              <li>It's a popular library, so I'll be 
-              able to fit in with the cool kids!</li>
-              <li>I'm more likely to get a job as a developer
-              if I know React</li>
-          </ol>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
       </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
   )
 }
-function Page() {
-  return (
-      <div>
-          <Header />
-          <MainContent />
-          <Footer />
-      </div>
-  )
-}
 
-ReactDOM.createRoot(document.getElementById("root")).render(<Page/>)
-
-
-
+export default App
