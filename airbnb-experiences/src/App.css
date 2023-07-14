@@ -1,0 +1,50 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+}
+.nav--bar{
+  display: flex;
+  padding:20px 30px;
+
+  
+}
+.air-logo{
+  width:90px;
+  max-width: 100px;
+}
+.hero-main{
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+}
+.hero--pic{
+  max-width: 400px;
+  align-self:center;
+}
+.hero--header{
+  margin-bottom: 15px;
+}
+.hero--text{
+  margin-top:0;
+}
+.swim-pict{
+  width:230px;
+  height: 230px;
+  border-radius: 9px;
+  
+}
+.card--stats{
+  display:flex;
+  align-items:center;
+}
+.star{
+  height:15px;
+}
+.gray {
+  color: #918E9B;
+}
+.bold{
+  font-weight: bold;
+}
