@@ -7,7 +7,7 @@ body{
 .nav--bar{
   display: flex;
   padding:20px 30px;
-
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
   
 }
 .air-logo{
@@ -48,6 +48,25 @@ body{
 .bold{
   font-weight: bold;
 }
+.card-list{
+  display:flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
 .card{
   margin-left: 10px;
+  flex: 0 0 auto;         
+  display: flex;          
+  flex-direction: column;
+  position: relative;
+}
+.card--badge{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
 }
